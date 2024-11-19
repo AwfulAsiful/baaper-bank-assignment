@@ -10,52 +10,67 @@
     <link rel="stylesheet" href="/Styles/animation.css">
 </head>
 
-<body class="p-10">
-    <nav class="flex flex-row justify-between items-center">
-        <h2 class="text-center font-bold text-4xl ">Baaper!! Bank</h2>
+<body class="pb-8">
+    <div class="form-text bg-slate-700 px-4 py-8 flex flex-row justify-between items-center">
+
+        <div class="logo flex flex-row items-center">
+            <img src="/Images/old-man.png" alt="" class="w-[3.5rem]">
+            <h2 class="font-extrabold text-[2.25rem] text-orange-500">Baaper!!! Bank</h2>
+        </div>
+        <button
+            class=" bg-orange-500 font-bold text-slate-700 py-4 px-8 rounded-xl hover:bg-gray-200 hover:text-orange-500"
+            id="logout-btn">Log Out</button>
+
+    </div>
+    <!-- <nav class="flex flex-row justify-between items-center">
+        <h2 class="text-center font-bold text-4xl text-orange-500 ">Baaper!! Bank</h2>
         <button class="btn btn-error" id="logout-btn">Log Out</button>
-    </nav>
+    </nav> -->
     <div class="calc-display-container flex flex-col gap-y-6 items-center mt-8 md:flex-row gap-x-6 justify-center">
-        <div class="card bg-base-100 w-96 shadow-xl py-6 border-2 border-zinc-400" id="deposit">
+        <div class="card bg-base-100 w-96 shadow-md py-6 " id="deposit">
             <div class="card-body">
-                <h2 class="card-title text-4xl">Deposit</h2>
-                <p class="text-2xl mt-2">$ <span id="deposit-amount">00</span></p>
+                <h2 class="card-title text-4xl text-orange-500">Deposit</h2>
+                <p class="text-2xl mt-2 text-slate-700">$ <span id="deposit-amount">00</span></p>
             </div>
         </div>
-        <div class="card bg-base-100 w-96 shadow-xl py-6 border-2 border-zinc-400" id="deposit">
+        <div class="card bg-base-100 w-96 shadow-md py-6 " id="deposit">
             <div class="card-body">
-                <h2 class="card-title text-4xl">Withdraw</h2>
-                <p class="text-2xl mt-2">$ <span id="withdraw-amount">00</span></p>
+                <h2 class="card-title text-4xl text-orange-500">Withdraw</h2>
+                <p class="text-2xl mt-2 text-slate-700">$ <span id="withdraw-amount">00</span></p>
             </div>
         </div>
-        <div class="card bg-base-100 w-96 shadow-xl py-6 border-2 border-zinc-400" id="deposit">
+        <div class="card bg-base-100 w-96 shadow-md py-6 " id="deposit">
             <div class="card-body">
-                <h2 class="card-title text-4xl">Total</h2>
-                <p class="text-2xl mt-2">$ <span id="total-amount">100</span></p>
+                <h2 class="card-title text-4xl text-orange-500">Total</h2>
+                <p class="text-2xl mt-2 text-slate-700">$ <span id="total-amount">100</span></p>
             </div>
         </div>
     </div>
 
 
     <div class="input-container mt-8 flex flex-col gap-y-8 items-center md:flex-row md:justify-center gap-x-8">
-        <div class="card bg-base-100 w-96 shadow-xl py-6 border-2 border-zinc-400" id="deposit">
+        <div class="card bg-base-100 w-96 shadow-md py-6 " id="deposit">
             <div class="card-body">
-                <h2 class="card-title text-xl">Please enter the deposit amount</h2>
+                <h2 class="card-title text-xl text-slate-700">Please enter the deposit amount</h2>
                 <input type="number" class="input input-bordered mt-4" placeholder="Deposit Amount"
                     id="deposit-input"><br>
             </div>
             <div class="card-actions justify-end mr-6">
-                <button class="btn btn-primary" id="deposit-btn">Deposit</button>
+                <button
+                    class=" bg-orange-500 font-bold text-slate-700 py-4 px-8 rounded-xl hover:bg-slate-700 hover:text-orange-500"
+                    id="deposit-btn">Deposit</button>
             </div>
         </div>
-        <div class="card bg-base-100 w-96 shadow-xl py-6 border-2 border-zinc-400" id="deposit">
+        <div class="card bg-base-100 w-96 shadow-md py-6 " id="deposit">
             <div class="card-body">
-                <h2 class="card-title text-xl">Please enter the withdraw amount</h2>
+                <h2 class="card-title text-xl text-slate-700">Please enter the withdraw amount</h2>
                 <input type="number" class="input input-bordered mt-4" placeholder="Withdraw Amount"
                     id="withdraw-input"><br>
             </div>
             <div class="card-actions justify-end mr-6">
-                <button class="btn btn-primary" id="withdraw-btn">Withdraw</button>
+                <button
+                    class=" bg-orange-500 font-bold text-slate-700 py-4 px-8 rounded-xl hover:bg-slate-700 hover:text-orange-500"
+                    id="withdraw-btn">Withdraw</button>
             </div>
         </div>
 

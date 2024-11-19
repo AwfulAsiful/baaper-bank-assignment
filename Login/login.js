@@ -39,6 +39,9 @@ loginBtn.addEventListener('click', () => {
     if (email === loginEmail && pass === loginPass) {
         // alert("Login Successful!!");
         showPopup();
+        setTimeout(()=>{
+            window.location.href='/Main/main.html';
+        },3500)
     }
     else {
         showWarning();

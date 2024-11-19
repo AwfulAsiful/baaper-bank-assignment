@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Successful Modal -->
     <div role="alert" class="alert alert-success w-[2rem] hidden" id="succes-alert">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -19,6 +20,7 @@
         <span>Login Succesful!!</span>
     </div>
 
+    <!-- Unsuccesful Modal -->
     <div role="alert" class="alert alert-warning w-[2rem] hidden" id="warining-alert">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -26,12 +28,20 @@
         </svg>
         <span>Unsuccesful!!</span>
     </div>
-    <div class="form-container">
-        <div class="form-text bg-slate-700 px-4 py-8 text-center">
-            <h2 class="font-extrabold text-[2.25rem] text-orange-500">Baaper!!! Bank</h2>
 
+    <div class="form-text bg-slate-700 px-4 py-8 flex flex-row items-center">
+        <img src="/Images/old-man.png" alt="" class="w-[4rem]">
+        <h2 class="font-extrabold text-[2.25rem] text-orange-500">Baaper!!! Bank</h2>
+        
+    </div>
+    <!-- login Form Starts -->
+    <div class="form-container flex flex-row">
+        <div class="login-img w-[50rem]">
+            <img src="/Images/undraw_Payments_re_77x0.png" alt="">
         </div>
-        <div class="login-form flex flex-col items-center gap-y-4 mt-[5rem]">
+        <div class="login-form flex flex-col gap-y-4 mt-[5rem] ml-[3rem]">
+            <h2 class="font-extrabold text-[2.25rem] text-orange-500">Login  <span class="text-slate-700"> Form</span>
+            </h2>
             <form action="">
                 <input type="email" name="" id="email" placeholder="Email"
                     class=" w-72 input input-bordered border-slate-700 focus:border-orange-500 focus:outline-none"><br>
@@ -39,11 +49,12 @@
                     class="w-72  input input-bordered border-slate-700 mt-4 focus:border-orange-500 focus:outline-none">
             </form>
             <button
-                class=" bg-orange-500 font-bold text-slate-700 py-4 px-8 rounded-[1.25rem] hover:bg-gray-300 hover:text-orange-500"
+                class=" bg-orange-500 font-bold text-slate-700 py-4 px-8 rounded-xl hover:bg-slate-700 hover:text-orange-500"
                 id="login-btn">Login</button>
         </div>
 
     </div>
+    <!-- login form ends -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="login.js"></script>
 </body>
