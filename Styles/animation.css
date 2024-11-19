@@ -1,0 +1,52 @@
+/* Base styles for the alert */
+#succes-alert {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    z-index: 1000;
+    width: 300px; /* Set a card-like width */
+    max-width: 90%; /* Ensure it adjusts on smaller screens */
+    padding: 1.5rem; /* Padding for the card */
+    background-color: #3cc4bb; /* Card background */
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    text-align: center; /* Center the text */
+  }
+  
+  /* Active state */
+  #succes-alert.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+/* Base styles for the warning alert */
+#warining-alert {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    z-index: 1000;
+    width: 300px; /* Set a card-like width */
+    max-width: 90%; /* Ensure it adjusts on smaller screens */
+    padding: 1.5rem; /* Padding for the card */
+    background-color: #fff5f5; /* Light warning background */
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    text-align: center; /* Center the text */
+    color: #e53e3e; /* Red warning text color */
+    border: 1px solid #e53e3e; /* Red border for warning */
+  }
+  
+  /* Active state */
+  #warining-alert.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  
