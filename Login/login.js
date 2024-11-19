@@ -43,6 +43,8 @@ loginBtn.addEventListener('click', () => {
     else {
         showWarning();
     }
+    reset('email'); reset('password');
+
     // console.log(email,pass);
 
 })
